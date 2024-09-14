@@ -6,6 +6,6 @@ services:
     ports:
         - '5432:5432'
     environment:
-        - POSTRES_USER=docker
+        - POSTGRES_USER=docker
         - POSTGRES_PASSWORD=docker
         - POSTGRES_DB=inorbit
