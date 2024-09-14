@@ -1,0 +1,8 @@
+# Requisição POST
+POST http://localhost:3333/goals
+Content-Type: application/json
+
+{
+    "title": "Nadar",
+    "desiredWeeklyFrequency": 2
+}
