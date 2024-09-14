@@ -1,14 +1,14 @@
-#Requisição POST create goal completion
-POST http://localhost:3333/completions
-Content-Type: application/json
-
-{
-    "goalId": "wtjpkmbw47vgn0ax1z6rpqyy"
-}
-
-# # Requisição GET pending-goals
-# GET http://localhost:3333/pending-goals
+# #Requisição POST create goal completion
+# POST http://localhost:3333/completions
 # Content-Type: application/json
+
+# {
+#     "goalId": "wtjpkmbw47vgn0ax1z6rpqyy"
+# }
+
+# Requisição GET pending-goals
+GET http://localhost:3333/pending-goals
+Content-Type: application/json
 
 # # Requisição POST
 # POST http://localhost:3333/goals

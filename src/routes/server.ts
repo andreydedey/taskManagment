@@ -56,10 +56,9 @@ app.post(
     const result = await createGoalCompletion({
       goalId,
     })
-
-    return result
   }
 )
+
 
 app
   .listen({
