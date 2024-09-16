@@ -1,0 +1,14 @@
+import fastify from 'fastify'
+import type {
+  FastifyPluginAsyncZod,
+  ZodTypeProvider,
+} from 'fastify-type-provider-zod'
+import { getWeekPendingGoals } from '../../services/get-week-pending-goals'
+
+export const getPendingGoalsRoute: FastifyPluginAsyncZod = async app => {
+  app.get('/pending-goals', async () => {
+    const pendingGoals = await getWeekPendingGoals()
+
+    return { pendingGoals }
+  })
+}
